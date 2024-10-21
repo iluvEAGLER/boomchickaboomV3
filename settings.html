@@ -76,51 +76,23 @@
           </div>
           <br>
       </div>
-      <div class="box panic-button">
-          <h2>Panic Button</h2>
-          <p>Setup a panic button to hide this website when pressed.</p>
-          <div class="input">
-              <input id="key-input" type="text" placeholder="Key" value="]">
-              <input id="website-input" type="text" placeholder="Website" value="https://classroom.gooogle.com">
-          </div>
-      </div>
-      <div class="box about-blank">
-          <h2>About:Blank</h2>
-          <p>Open this website as an about:blank tab/window to hide it from your search history.</p>
-          <div class="buttons">
-              <button onclick="openNewTab()">About:Blank Tab</button>
-              <button onclick="openNewWindow()">About:Blank Window</button>
-          </div>
-      </div>
-      <div class="box theme">
-          <h2>Theme</h2>
-          <p>Customise the theme of certain buttons, boxes, menu items etc...</p>
-          <div class="buttons">
-              <select id="themeSelector">
-                  <option value="dark">Dark</option>
-                  <option value="light">Light</option>
-              </select>
-          </div>
-      </div>
-  </div>
 <!-- Footer Start -->
 <footer class="footer-sticky">
     <div class="logo-container">
-        <a>BCHS Unblocked Games</a>
+        <a>Speed Client Launcher</a>
     </div>
     <nav class="footer-nav">
         <a href="iframe.html" onclick="setIframeType('settings');localStorage.setItem('shownameandimg', 'false');localStorage.setItem('storedURL', 'https://forms.gle/it3WqC7rxXLx9ePc8');" class="footer-link">Request Games</a>
         <a href="iframe.html" onclick="setIframeType('settings');localStorage.setItem('shownameandimg', 'false');localStorage.setItem('storedURL', 'https://forms.gle/jgaXfQ6SYuetojyc8');" class="footer-link">Report a Problem</a>
         <a href="https://github.com/tw31122007/BCHS-Unblocked-Games" target="_blank" class="footer-link">Github</a>
-        <a href="credits.html" class="footer-link">Credits</a>
     </nav>
 </footer>
 <!-- Footer End -->
 </div>
   <script src="assets/js/panic.js"></script>
-  <script src="assets/js/aboutblank.js"></script>
-  <script src="assets/js/settings.js"></script>
-  <script src="assets/js/touchscreen.js"></script>
+  <script src="aboutblank.js"></script>
+  <script src="settings.js"></script>
+  <script src="touchscreen.js"></script>
   <script>
     function setIframeType(type) {
         localStorage.setItem('iframe-type', type);
