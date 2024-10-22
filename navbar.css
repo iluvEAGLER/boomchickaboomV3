@@ -23,7 +23,9 @@
 /* The navbar */
 .topnav {
   overflow: hidden;
-  background-color: #333;
+  background-color: DeepSkyBlue;
+  border: 3px solid Black;
+  border-radius: 5px;
 }
 
 /* Navbar links */
