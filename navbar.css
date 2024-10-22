@@ -23,15 +23,16 @@
 /* The navbar */
 .topnav {
   overflow: hidden;
-  background-color: DeepSkyBlue;
+  background-color: White;
   border: 3px solid Black;
   border-radius: 5px;
+  color: White;
 }
 
 /* Navbar links */
 .topnav a {
   float: left;
-  color: #f2f2f2;
+  color: White;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
@@ -39,6 +40,7 @@
 }
 
 .topnav a:hover {
-  background-color: #ddd;
-  color: black;
+  background-color: Black;
+  color: DeepSkyBlue;
+  border: 3px solid DeepSkeyBlue;
 }
