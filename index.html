@@ -1,0 +1,215 @@
+/* Global Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+.rightcolumn{
+    text-decoration: none;
+    padding: 15px 40px;
+    background: linear-gradient(90deg, #cb353d, #ed6240);
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border-radius: 30px;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+    align-items: right;
+}
+/* Full-Page Background */
+.main-bg {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(135deg, #cb353d, #f9b64e);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+}
+
+/* Background Particles Animation */
+.main-bg::before {
+    content: '';
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    background: rgba(249, 182, 78, 0.2);
+    border-radius: 50%;
+    filter: blur(200px);
+    animation: float 5s infinite alternate;
+}
+
+/* Floating Animation */
+@keyframes float {
+    from {
+        transform: translate(0, -20px);
+    }
+    to {
+        transform: translate(20px, 20px);
+    }
+}
+
+/* Main Container */
+.container {
+    max-width: 700px;
+    width: 90%;
+    background: rgba(86, 61, 67, 0.95);
+    border-radius: 25px;
+    padding: 50px;
+    box-shadow: 0 15px 50px rgba(0, 0, 0, 0.8);
+    text-align: center;
+    z-index: 10;
+    position: relative;
+}
+
+/* Logo */
+.logo {
+    width: 120px;
+    margin-bottom: 15px;
+    animation: pop 1.2s ease-in-out;
+}
+
+/* Logo Animation */
+@keyframes pop {
+    0% {
+        transform: scale(0.8);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+/* Title and Tagline */
+.title {
+    font-size: 4rem;
+    color: #f9b64e;
+    text-shadow: 2px 2px 15px rgba(0, 0, 0, 0.6);
+}
+
+.tagline {
+    font-size: 1.5rem;
+    font-weight: 300;
+    color: #ed6240;
+    margin-bottom: 30px;
+}
+
+/* Menu */
+.menu {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.menu-item {
+    text-decoration: none;
+    padding: 15px 40px;
+    background: linear-gradient(90deg, #cb353d, #ed6240);
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border-radius: 30px;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+}
+
+/* Hover and Focus Effects */
+.menu-item:hover {
+    transform: scale(1.1);
+    background: #f9b64e;
+    color: #563d43;
+    box-shadow: 0 10px 25px rgba(249, 182, 78, 0.7);
+}
+
+/* Footer */
+.footer {
+    margin-top: 50px;
+    font-size: 0.9rem;
+    color: rgba(255, 255, 255, 0.8);
+    animation: fadeIn 2s;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+/* Alert Styles */
+.alert {
+    position: fixed;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #cb353d;
+    color: #fff;
+    padding: 15px 25px;
+    border-radius: 8px;
+    font-size: 1.2rem;
+    z-index: 1000;
+    opacity: 1;
+    animation: pop-in 0.5s;
+}
+
+.alert.fade-out {
+    animation: fade-out 1s forwards;
+}
+
+@keyframes pop-in {
+    from {
+        transform: translateX(-50%) scale(0.8);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(-50%) scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes fade-out {
+    to {
+        opacity: 0;
+        transform: translateX(-50%) scale(0.9);
+    }
+}
+
+/* Particle Styles */
+.particle {
+    position: absolute;
+    top: -10px;
+    width: 10px;
+    height: 10px;
+    background-color: #f9b64e;
+    border-radius: 50%;
+    opacity: 0.7;
+    animation: particle-fall linear infinite;
+}
+
+@keyframes particle-fall {
+    to {
+        transform: translateY(100vh) rotate(360deg);
+    }
+}
+
+/* Launching Effect */
+body.launching {
+    background-color: #ed6240;
+    animation: flash 0.5s alternate infinite;
+}
+
+@keyframes flash {
+    from {
+        background-color: #cb353d;
+    }
+    to {
+        background-color: #f9b64e;
+    }
+}
