@@ -68,20 +68,10 @@
             width: 100%;
             align-items: center;
             justify-content: center;
-            border: 2.5px solid white;
-            padding: 10px;
-            color: white;
             text-decoration: none;
             gap: 20px;
             align-items: center;
-            border-radius: 4px;
-            transition-duration: 200ms;
-        }
-
-        a:hover {
-            background: Black;
-            color: DeepSkyBlue;
-            border: 2.5px solid DeepSkyBlue;
+            
         }
 
         a i {
