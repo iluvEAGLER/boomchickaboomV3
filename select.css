@@ -110,7 +110,7 @@
     conic-gradient(from 90deg at var(--b) var(--b),#0000 90deg,var(--color) 0)
     var(--_p) var(--_p)/calc(100% - var(--b) - 2*var(--_p)) calc(100% - var(--b) - 2*var(--_p));
   transition: .3s linear, color 0s, background-color 0s;
-  outline: var(--b) solid #0000;
+  outline: var(--b) solid White;
   outline-offset: .6em;e
   font-size: 16px;
 
@@ -120,7 +120,7 @@
   -webkit-user-select: none;
   touch-action: manipulation;
   width: 350px;
-  color: Fuchsia;
+  color: White;
 }
 
 .button-89:hover,
