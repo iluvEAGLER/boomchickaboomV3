@@ -16,7 +16,7 @@
   }
   
   .nav-links li a {
-    color: #ff3b3b; /* Button Color */
+    color: DeepSkyBlue; /* Button Color */
     text-decoration: none;
     margin: 0 20px;
     font-size: 20px;
@@ -31,7 +31,8 @@
     bottom: -5px;
     height: 2px;
     width: 100%;
-    background-color: #ff3b3b;
+    background-color: DeepSkyBlue;
+    color: Black;
     transform: scaleX(0);
     transition: transform 0.3s ease;
   }
