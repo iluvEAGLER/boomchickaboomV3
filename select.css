@@ -120,7 +120,7 @@
   -webkit-user-select: none;
   touch-action: manipulation;
   width: 350px;
-  color: White;
+  font-family: "Saira";
 }
 
 .button-89:hover,
