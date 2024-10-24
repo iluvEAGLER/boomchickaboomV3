@@ -112,6 +112,7 @@
   user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
+  width: 350px;
 }
 
 .button-89:hover,
