@@ -41,7 +41,7 @@
             border-radius: 12px;
             padding: 30px 40px;
             display: flex;
-            flex-direction: column;
+            flex-direction: row;
             flex-wrap: wrap;
         }
               
