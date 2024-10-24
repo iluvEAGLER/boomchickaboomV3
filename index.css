@@ -1,7 +1,11 @@
 /* Global Reset */
 
 .title-img {
-    border-radius: 100px;
+    width: 200px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    box-shadow: 0 0 10px 5px lightblue;
+}
     
 
 * {
