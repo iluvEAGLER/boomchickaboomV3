@@ -34,7 +34,7 @@
 
        .button-container {
             width: 420px;
-            background: DeepSkyBlue;
+            background-color: DeepSkyBlue;
             border: 2px solid rgba(255, 255, 255, .2);
             backdrop-filter: blur(9px);
             color: #fff;
@@ -43,7 +43,6 @@
             display: flex;
             flex-direction: row;
             flex-wrap: wrap;
-            background-color:rgba(0,0,170,0.3);
         }
               
         section {
