@@ -44,12 +44,17 @@
             display: flex;
             flex-direction: column;
             gap: 20px;
-            width: 100%;
-            max-width: 600px;
             margin: 0 auto;
             padding: 10px;
             justify-content: center;
             align-items: center;
+            width: 420px;
+            background: transparent;
+            border: 2px solid rgba(255, 255, 255, .2);
+            backdrop-filter: blur(9px);
+            color: #fff;
+            border-radius: 12px;
+            padding: 30px 40px;
         }
 
         section > div {
@@ -98,7 +103,7 @@
     conic-gradient(from 90deg at var(--b) var(--b),#0000 90deg,var(--color) 0)
     var(--_p) var(--_p)/calc(100% - var(--b) - 2*var(--_p)) calc(100% - var(--b) - 2*var(--_p));
   transition: .3s linear, color 0s, background-color 0s;
-  outline: var(--b) solid White;
+  outline: var(--b) solid #0000;
   outline-offset: .6em;e
   font-size: 16px;
 
@@ -107,7 +112,6 @@
   user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
-  color: White;
 }
 
 .button-89:hover,
